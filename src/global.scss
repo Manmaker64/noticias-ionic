@@ -24,3 +24,89 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+// Estilos propios
+body, ion-header {
+    background-color: var( --ion-color-dark ) !important;
+}
+
+.text-primary, .head {
+    color: var( --ion-color-primary ) !important;
+}
+
+.noticia-source-name {
+    font-size: 13px !important;
+    color: lightgray !important;
+}
+
+.noticia-name {
+    font-size: 17px !important;
+}
+
+.infinite-loading-spinner ion-spinner {
+    color: var( --ion-color-primary ) !important;
+}
+
+.loadingText .infinite-loading-text {
+    color: white !important;
+}
+
+.action-dark, .action-sheet-group {
+    background-color: var( --ion-color-dark ) !important;
+    color: white !important;
+}
+
+.action-dark ion-icon {
+    color: white !important;
+}
+
+// No muestre el icono en IOS
+.ios .action-sheet-icon {
+    display: none !important;
+}
+
+.ios .action-sheet-button-inner {
+    background-color: var( --ion-color-dark ) !important;
+}
+
+.tab-selected {
+    color: var( --ion-color-primary ) !important;
+}
+
+// Animaciones
+.animated {
+    -webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+    -webkit-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+}
+
+.animated.fast {
+    -webkit-animation-duration: 700ms !important;
+    animation-duration: 700ms !important;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0 !important;
+    }
+
+    to {
+        opacity: 1 !important;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0 !important;
+    }
+
+    to {
+        opacity: 1 !important;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn !important;
+    animation-name: fadeIn !important;
+}
